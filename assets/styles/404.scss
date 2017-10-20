@@ -1,0 +1,30 @@
+@import "../common/variables";
+
+.error404 {
+	.page-wrapper {
+		background: url(#{$path}images/xp.jpg) 50% 50% no-repeat;
+		background-size: cover;
+	}
+
+	.xp-dialog {
+		background: #e5dbcf;
+		border-radius: 4px;
+		border:solid 3px #066fe2;
+		min-width: 310px;
+		max-width: 500px; 
+
+		.popup__header {
+			background: #066fe2;
+			color: #fff;
+			padding: 5px 10px;
+		}
+
+		.popup__content {
+			padding: 20px;
+		}
+	}
+
+	.main-footer {
+		display: none;
+	}
+}

@@ -1,0 +1,68 @@
+@import "../common/variables";
+
+.page-template-accounts {
+	.accounts-list {
+		position: relative; 
+		list-style: none;
+		padding: 0;
+
+  		ul {
+  			display: inline;
+  			position: relative;
+  			list-style: none;
+  			padding: 0;
+  		}
+
+  		li {
+  			display: inline;
+  			position: relative;
+			text-align: left;
+			align-self: center;
+			margin: 0;
+			padding: 0;
+			width: 33.33%;
+  		}
+
+  		.name {
+			display: none;
+		}
+
+  		svg {
+			fill: var(--c2); 
+			width: 33.33%;
+			height: auto;
+			z-index: 2;
+			position: relative;
+		}
+	}
+}
+
+// Phone Landscape
+@media (min-width: $sm) {
+	.page-template-accounts {
+		.accounts-list {
+			li,
+			svg {
+				width: 20%;
+			}
+		}
+	}
+}
+
+// Tablet
+@media (min-width: $md) {
+	.page-template-accounts {
+		.accounts-list {
+			li {
+				display: inline-block;
+				width: auto;
+			}
+
+			svg {
+				float: none;
+				width: auto;
+				max-width: 120px;
+			}
+		}
+	}
+}

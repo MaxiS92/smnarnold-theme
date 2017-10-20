@@ -1,0 +1,23 @@
+{
+	"folders":
+	[
+		{
+			"path": ".",
+			"folder_exclude_patterns": [
+				".github",
+				"node_modules",
+				"bower_components",
+				"dist"
+			],
+			"file_exclude_patterns": [
+				"CHANGELOG.md",
+				"LICENSE.md",
+				"screenshot.png",
+				"yarn.lock",
+				".travis.yml",
+				".bowerrc"
+			]
+		}
+		
+	]
+}

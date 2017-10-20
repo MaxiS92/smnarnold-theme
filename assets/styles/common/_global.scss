@@ -1,0 +1,183 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	width: 100%;
+	min-height: 100%;
+	background-color: var(--c1);
+	font-size: 16px;
+	font-family: 'Roboto Mono', monospace;
+	line-height: 1.6;
+	margin: 0;
+	padding: 0;
+}
+
+section {
+	margin: 1em -30px;
+	padding: .5em 30px;
+}
+
+time {
+	white-space: nowrap;
+}
+
+h1 {
+	font-size: calc(2vw + 2vh + 1vmin);
+	font-family: 'Rubik', sans-serif;
+	letter-spacing: 2px;
+	line-height: 1.2;
+	font-weight: 900;
+	text-transform: uppercase;
+}
+
+h2,h3,h4 {
+	color: #fff;
+	font-size: 1.125rem;
+} 
+
+p {
+	font-size: 0.815rem;
+	color: rgba(#fff, 0.5);
+}
+
+ul {
+	font-size: 0.8125rem;
+	padding: 0;
+
+	ul {
+		margin: 1em 0;
+		padding: 0 0 0 1.25em;
+	}
+}
+
+li {
+	margin: 0.5em 0;
+
+	&:first-child {
+		margin-top: 0;
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+a {
+	display: inline-block;
+	position: relative;
+	text-decoration: none;
+	color: var(--c2);
+	font-weight: 400;
+	
+	&:not(.btn) { 
+		&::after {
+			content: '';
+			position: absolute; 
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 1px;
+			background: #fff;
+			transform: translateY(0);
+			transition: transform .3s;
+		}
+
+		&:hover, &:focus {
+			&::after {
+				transform: translateY(-2px);
+			}
+		}
+	}
+}
+
+.main {
+	svg {
+		fill: currentColor;
+		width: 1em;
+		vertical-align: text-top;
+	}
+}
+
+::selection {
+    color: var(--c1); 
+    background: var(--c2);
+}
+
+.only-admin {
+	display: none;
+}
+
+.role-administrator {
+	.only-admin {
+		display: initial;
+	}
+}
+
+.page-wrapper {
+	position: relative;
+	min-height: 100vh;
+	background-color: var(--c1);
+	color: #fff;
+	padding: 30px;
+	z-index: 2;
+}
+
+.super {
+	display: block;
+	position: relative;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-size: calc(2vw + 2vh + 1vmin);
+	font-family: 'Rubik', sans-serif;
+	letter-spacing: 2px;
+	line-height: 1.2;
+	font-weight: 900;
+	max-width: 100%;
+	margin: 1em 0;
+	text-transform: uppercase;
+
+	* {
+		font-family: inherit;
+		font-size: inherit;
+		font-weight: inherit;
+	}
+}
+
+.page-header {
+	text-align: center;
+}
+
+// Tablet
+@media (min-width: 668px) {
+	html, body {
+		background: #fff;
+	}
+
+	body {
+		padding: 40px;
+	}
+
+	section {
+		margin: 1em -40px;
+		padding: .5em 40px;
+	}
+
+	.page-wrapper {
+		min-width: calc(100vw - 80px);
+    	min-height: calc(100vh - 80px);
+		
+	}
+
+	.page-header {
+		text-align: left;
+	}
+}
+
+@media (min-width: 668px) and (orientation: landscape) {
+	.super {
+		max-width: 80%;
+		font-size: calc(1.5vw + 1.5vh + 1.5vmin);
+	}
+}

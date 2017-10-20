@@ -1,0 +1,2 @@
+.page-template-me .logo{position:relative;display:block;width:150px;height:150px;text-align:center;background-color:var(--c2);background-image:url(wp-content/themes/simon/dist/images/logo.png);background-size:auto 150px;background-position:0 0;-webkit-animation:logo 2.5s steps(10) infinite;animation:logo 2.5s steps(10) infinite;border:solid 5px var(--c2);margin:20px 0 0}@-webkit-keyframes logo{to{background-position:-1500px 0}}@keyframes logo{to{background-position:-1500px 0}}
+/*# sourceMappingURL=me.css.map */

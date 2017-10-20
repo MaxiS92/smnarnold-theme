@@ -1,0 +1,60 @@
+{
+  "dependencies": {
+    "main.js": {
+      "files": [
+        "scripts/main.js"
+      ],
+      "main": true
+    },
+    "main.css": {
+      "files": [
+        "styles/main.scss"
+      ],
+      "main": true
+    },
+    "404.css": {
+      "files": [
+        "styles/pages/404.scss"
+      ],
+      "bower": []
+    },
+    "accounts.css": {
+      "files": [
+        "styles/pages/accounts.scss"
+      ],
+      "bower": []
+    },
+    "me.css": {
+      "files": [
+        "styles/pages/me.scss"
+      ],
+      "bower": []
+    },
+    "logs.css": {
+      "files": [
+        "styles/pages/logs.scss"
+      ],
+      "bower": []
+    },
+    "now.css": {
+      "files": [
+        "styles/pages/now.scss"
+      ],
+      "bower": []
+    },
+    "lab.css": {
+      "files": [
+        "styles/pages/lab.scss"
+      ],
+      "bower": []
+    },
+    "customizer.js": {
+      "files": [
+        "scripts/customizer.js"
+      ]
+    }
+  },
+  "config": {
+    "devUrl": "http://localhost:8888/portfolio/"
+  }
+}

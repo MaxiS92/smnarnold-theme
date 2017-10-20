@@ -1,0 +1,28 @@
+@import "../common/variables";
+
+$headerH: 40;
+$logoDimension: 150; 
+$steps: 10;
+
+.page-template-me {
+	.logo {
+		position: relative;
+		display: block;
+		width: $logoDimension * 1px;
+		height: $logoDimension * 1px;
+		text-align: center;
+		background-color: var(--c2);
+		background-image: url(#{$path}images/logo.png);
+		background-size: auto $logoDimension * 1px;
+		background-position: 0 0;
+		animation: logo $steps * .25s steps($steps) infinite;
+		border: solid 5px var(--c2);
+		margin: 20px 0 0 0;
+	}
+}
+
+@keyframes logo {
+	100% { 
+		background-position: $logoDimension * $steps * -1px 0; 
+	}
+}

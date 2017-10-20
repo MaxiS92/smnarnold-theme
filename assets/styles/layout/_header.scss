@@ -1,0 +1,26 @@
+.main-header {
+	font-size: .75rem;
+
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	li {
+		display: inline-block;
+		margin: 0 .75em .25em 0;
+	}
+
+	a {
+		text-decoration: none;
+
+		&::before {
+			content: '/';
+		}
+
+		&::after {
+			display: none;
+		}
+	}
+}
